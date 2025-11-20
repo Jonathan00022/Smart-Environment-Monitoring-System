@@ -2,7 +2,7 @@
 
 This is the Demo concept for a scalable environmental sensing platform designed to monitor air quality and environmental conditions in real time. This is a demo-level implementation simulating how large cities could deploy distributed sensor nodes to provide live environmental data to citizens, improving public health, awareness, and smart-city planning.
 
-##🌍 Project Overview
+## 🌍 Project Overview
 
 The Smart Environment Monitoring System showcases how IoT sensor nodes can measure:
 
