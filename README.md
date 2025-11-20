@@ -1,8 +1,8 @@
-Smart Environment Monitoring System
+ ## Smart Environment Monitoring System
 
 This is the Demo concept for a scalable environmental sensing platform designed to monitor air quality and environmental conditions in real time. This is a demo-level implementation simulating how large cities could deploy distributed sensor nodes to provide live environmental data to citizens, improving public health, awareness, and smart-city planning.
 
-🌍 Project Overview
+##🌍 Project Overview
 
 The Smart Environment Monitoring System showcases how IoT sensor nodes can measure:
 
@@ -26,33 +26,27 @@ MQTT data streaming pipeline
 
 Reference hardware components for real implementation
 
-📁 Repository Structure
-Smart Environment Monitoring System/
-│
-├── Docs/
-│   ├── Images/
-│   │   ├── schematic.png
-│   │   ├── gauges.png
-│   │   └── trends.png
-|   |   |__Block Diagram.jpg
-|   |   |__NodeRED_Flow.png
-│  
-│
-├── Firmware/
-│   └── |——fimware.ino/
-|       |——bridge.py
-│       
-│
-├── Hardware/
-│   ├──Proteus schematics/
-│             |——Smart Environment Monitoring system.pdsprj
-│
-├── Dashboard/
-│   └── NodeRED_Flow.json
-│
-└── README.md
+## 📁 Repository Structure
 
-🛠️ Real Hardware Node (For Real Deployment)
+Smart Environment Monitoring System/
+├── Docs/
+├── Images/
+│ ├── schematic.png
+│ ├── gauges.png
+│ ├── trends.png
+│ ├── Block Diagram.jpg
+│ └── NodeRED_Flow.png
+├── Firmware/
+│ ├── firmware.ino
+│ └── bridge.py
+├── Hardware/
+│ └── Proteus schematics/
+│ └── Smart Environment Monitoring system.pdsprj
+├── Dashboard/
+│ └── NodeRED_Flow.json
+└── README.md 
+
+## 🛠️ Real Hardware Node (For Real Deployment)
 
 Microcontroller
 
@@ -88,7 +82,7 @@ MQTT broker (Cloud MQTT / Mosquitto)
 
 Node-RED
 
-🧪 Simulation Setup (Proteus Demo)
+## 🧪 Simulation Setup (Proteus Demo)
 
 Since many of  real sensors cannot run directly in proteus simulation, the following substitutes are used:
 
@@ -106,7 +100,7 @@ Mosquitto MQTT Broker
 
 Node-RED
 
-🔗 Simulation Data Flow
+## 🔗 Simulation Data Flow
 Proteus → VSPD → Python Bridge Script → MQTT Broker → Node-RED Dashboard
 
 Why the Serial → MQTT Bridge?
@@ -114,10 +108,10 @@ Why the Serial → MQTT Bridge?
 Proteus outputs data only through virtual COM ports.
 The Python bridge script reads serial values, converts them into JSON, and publishes them to the MQTT broker so Node-RED can display them live.
 
-📡 MQTT Topics sets to
+## 📡 MQTT Topics sets to
 environment/data
 
-🖥️ Node-RED Dashboard
+## 🖥️ Node-RED Dashboard
 
 Features:
 
@@ -135,7 +129,7 @@ Dashboard flow file:
 
 Dashboard/NodeRED_Flow.json
 
-📊 Images
+ ##📊 Images
 System Schematic
 
 Docs/schematic.png
@@ -149,7 +143,7 @@ Trend Charts
 Docs/trends.png
 
 
-🔧 PM2.5 Calibration Note
+## 🔧 PM2.5 Calibration Note
 
 The simulation sensor outputs PM2.5 in µg / 0.1L, which causes unrealistic high values.
 
@@ -165,7 +159,7 @@ calibration_factor = 0.164  used in this demo
 
 This matches near to real PM2.5 environmental concentrations per one declitre.
 
-🚀 How to Run
+## 🚀 How to Run
 1. Create Virtual COM Ports
 
 Link COM3 ↔ COM4 (or any pair) using Free VSPD / Com0Com.
@@ -185,7 +179,7 @@ Open in browser:
 
 http://localhost:1880/ui
 
-🏙️ Smart-City Vision
+## 🏙️ Smart-City Vision
 
 This project demonstrates how affordable IoT nodes can build a city-wide environmental monitoring network, enabling:
 
