@@ -27,7 +27,7 @@ MQTT data streaming pipeline
 Reference hardware components for real implementation
 
 ## 📁 Repository Structure
-
+```
 Smart Environment Monitoring System/
 ├── Docs/
 ├── Images/
@@ -45,7 +45,7 @@ Smart Environment Monitoring System/
 ├── Dashboard/
 │ └── NodeRED_Flow.json
 └── README.md 
-
+```
 ## 🛠️ Real Hardware Node (For Real Deployment)
 
 Microcontroller
