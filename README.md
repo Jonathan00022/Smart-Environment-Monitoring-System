@@ -193,7 +193,7 @@ Better urban-planning decisions
 
 📄 License
 
-OPEN-SOURCE
+MIT License
 
 🤝 Contributions
 
